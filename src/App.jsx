@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./FlipBook.css";
 import { pages } from "./message.js";
+import flipSound from "../sounds/one-page-book-flip-101928.mp3";
 
 export default function App() {
   const [current, setCurrent] = useState(0);
@@ -61,10 +62,12 @@ export default function App() {
       </div>
 
       {/* Hidden audio element */}
-      <audio
-        ref={audioRef}
-        src="/sounds/one-page-book-flip-101928.mp3"
-      />
+      <audio ref={audioRef}>
+        <source
+          src={flipSound}
+          type="audio/mpeg"
+        />
+      </audio>
     </div>
   );
 }

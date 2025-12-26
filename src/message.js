@@ -1,7 +1,10 @@
 export const pages = [
   {
     title: "Still Here",
-    text: "Hello Kurtney, this is a message to you for expressing my gratitude and admiration. It's composed of the backstory of what occurred to me this year.",
+    text: "This exists because one person mattered more than she knows.",
+  },
+  {
+    text: "Hello Kurtney, this is a message to you for expressing my gratitude and admiration. It's composed of the littlest bits of my backstory of what occurred to me this year.",
   },
   {
     text: "Writing this epistle is difficult for me because I'm showing my fragility. However, I entirely trust you and show what I really am.",
@@ -64,12 +67,17 @@ export const pages = [
     text: "I intensely admire your persistence and the way you exist. And just by existing, you've became one of my aspirations.",
   },
   {
+    text: "I'm super proudly to say I survived the battles on my mind before it consumes me wholely.",
+  },
+  { text: "And I'm super proud of you too! 🫶" },
+  {
     text: "Throughout the year. We fought our own brutal battles.",
   },
   { text: "Some days felt endless, some nights unbearable." },
   {
     text: "Yet, even in the darkness, we found the smallest sparks of light. Of moments of laughter, of courage, of quiet persistence. Every challenge tested us, pushed us to our limits, and yet, here we are.",
   },
+
   { text: "We conquered." },
   {
     text: "We Survived.",
