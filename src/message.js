@@ -71,6 +71,18 @@ export const pages = [
     text: "I'm super proudly to say I survived the battles on my mind before it consumes me wholely.",
   },
   { text: "And I'm super proud of you too!🫶" },
+  { text: "I now know how to stand on my own" },
+  {
+    text: "Not because the weight disappeared, but because I learned how to carry it. I learned that strength does not always look loud or confident.",
+  },
+  {
+    text: "I still have moments of doubt. I still get tired. But now I know that I am capable of moving through them. ",
+  },
+  { text: "I know that I can build meaning again, piece by piece." },
+  { text: "I now know how to give myself time to grow." },
+  {
+    text: "And if the situation does not get better, maybe it's us that does change. That there's a crack in everything, and that's how the light gets in.",
+  },
   {
     text: "Throughout the year. We fought our own brutal battles.",
   },
