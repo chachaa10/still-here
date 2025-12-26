@@ -1,34 +1,30 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./FlipBook.css";
+import { pages } from "./message.js";
 
-const pages = [
-  {
-    title: "Still Here",
-    text: "This exists because one person mattered more than she knows.",
-  },
-  {
-    text: "There were days when everything felt heavy. Thinking felt slow. Hope felt distant.",
-  },
-  {
-    text: "You didn’t fix my life. You didn’t promise anything. You were just there.",
-  },
-  {
-    text: "Somehow, that was enough. Knowing you existed made the weight lighter.",
-  },
-  {
-    text: "This is not a burden. This is gratitude.",
-  },
-];
-
-export default function FlipBook() {
+export default function App() {
   const [current, setCurrent] = useState(0);
+  const audioRef = useRef(null);
 
   const next = () => {
-    if (current < pages.length) setCurrent(current + 1);
+    if (current < pages.length) {
+      setCurrent(current + 1);
+      playSound();
+    }
   };
 
   const prev = () => {
-    if (current > 0) setCurrent(current - 1);
+    if (current > 0) {
+      setCurrent(current - 1);
+      playSound();
+    }
+  };
+
+  const playSound = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0; // restart
+      audioRef.current.play();
+    }
   };
 
   return (
@@ -41,7 +37,7 @@ export default function FlipBook() {
               className={`page ${index < current ? "flipped" : ""}`}
               style={{ zIndex: pages.length - index }}
             >
-              {page.title && <h1>{page.title}</h1>}
+              {page.title && <h1 className="title">{page.title}</h1>}
               <p>{page.text}</p>
               <span className="page-number">{index + 1}</span>
             </div>
@@ -63,6 +59,12 @@ export default function FlipBook() {
           ›
         </button>
       </div>
+
+      {/* Hidden audio element */}
+      <audio
+        ref={audioRef}
+        src="/sounds/one-page-book-flip-101928.mp3"
+      />
     </div>
   );
 }
