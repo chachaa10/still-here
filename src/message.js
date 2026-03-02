@@ -4,7 +4,7 @@ export const pages = [
     text: "This exists because one person mattered more than she knows.",
   },
   {
-    text: "Hello Kurtney, this is a message to you for expressing my gratitude and admiration. It's composed of the littlest bits of my backstory of what occurred to me this year.",
+    text: "Hello, this is a message to you for expressing my gratitude and admiration. It's composed of the littlest bits of my backstory of what occurred to me this year.",
   },
   {
     text: "Writing this epistle is difficult for me because I'm showing my fragility. However, I entirely trust you and show what I really am.",
